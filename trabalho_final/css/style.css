@@ -20,6 +20,11 @@
     padding-bottom: 0;
 }
 
+.navbar-nav{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .principal {
     display: flex; 
 }
@@ -39,7 +44,12 @@
     padding-bottom: 2%;
     
 }
-
+.imgTads{
+    height: 30vh;
+    object-fit: cover;
+    filter: blur(4px);
+    
+}
 .col-md-4{
     max-width: 20vh;
 }
@@ -47,8 +57,23 @@
     text-align: center;
     font: Verdana;
     font-size: 0.95em;
-    padding: 20;
-    
-    
+    padding: 1%;  
 }
 
+.informacao{
+    text-align: center;
+    font: Verdana;
+    font-size: 0.95em;
+    padding: 1%; 
+}
+
+.cabecalho{
+    text-align: center;
+    font: Verdana;
+    font-size: 0.95em;
+
+}
+
+.card-text{
+    padding-top: 8%;
+}
