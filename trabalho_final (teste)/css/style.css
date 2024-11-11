@@ -71,3 +71,16 @@
 }
 
 
+
+.imagemUFPR {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+    opacity: 0.5; /* Define transparência, se desejar */
+}
+
+
