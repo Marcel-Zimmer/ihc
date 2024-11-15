@@ -75,5 +75,20 @@
 }
 
 .card-text{
-    padding-top: 8%;
+    padding-top: 3%;
+}
+
+.list-group-item{
+    font-size: small;
+}
+.linksTads{
+    text-align: center;
+    font: Verdana;
+    font-size: 0.95em;
+    padding: 2%; 
+}
+
+.botoes{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }

@@ -72,15 +72,39 @@
 
 
 
-.imagemUFPR {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Coloca a imagem atrás do conteúdo */
-    opacity: 0.5; /* Define transparência, se desejar */
-}
+.fundo {
+    background-image: url("./capaUFPR.jpg");
+    opacity: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+  }
+  
+  /* Estiliza o conteúdo sobre a imagem */
+  .conteudo-sobre-imagem {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para destacar o texto */
+  }
+  
+  .colunas_de_links a{
+    color: #ffffff; /* Define a cor do link */
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 0%;
+    margin: 0%;
 
-
+  }
+  .colunas_de_links h5{
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .colunas_de_links{
+    line-height: 0.90;
+    text-align: left;
+    padding-left: 4%;
+    font-size: small;
+  }
+  
+  .colunas_de_links a:hover {
+    text-decoration: underline;
+  }
