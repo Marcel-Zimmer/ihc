@@ -82,14 +82,14 @@
     color: white;
   }
   
-  /* Estiliza o conteúdo sobre a imagem */
+
   .conteudo-sobre-imagem {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para destacar o texto */
+    background-color: rgba(0, 0, 0, 0.8); 
   }
   
   .colunas_de_links a{
-    color: #ffffff; /* Define a cor do link */
-    text-decoration: none; /* Remove sublinhado dos links */
+    color: #ffffff; 
+    text-decoration: none;
     padding: 0%;
     margin: 0%;
 
@@ -108,3 +108,54 @@
   .colunas_de_links a:hover {
     text-decoration: underline;
   }
+  .imgTads{
+    height: 30vh;
+    object-fit: cover;
+    filter: blur(2%);
+    
+}
+.apresentacao{
+  margin: 4%;
+  font-size: large;
+  
+}
+
+.rodape-ufpr{
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.corpo_efetivo{
+ text-align:left;
+ margin: 3.4%;
+}
+
+.tabela{
+  width: 100%;
+  
+}
+
+.Avisos_TADS {
+  display: flex;
+  justify-content: space-between; 
+}
+.coluna {
+  margin: 0;
+}
+
+.posts{
+  text-align: left;
+  
+}
+
+.autor{
+  width:80%;
+  line-height: 0.99;
+
+}
+.autor p{
+  margin: 0;
+  margin-top: 7%;
+  padding: 0;
+  margin-left: 10%;
+}
