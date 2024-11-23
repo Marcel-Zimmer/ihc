@@ -22,7 +22,6 @@
     margin-top: 0%;  
   }
 
-
 .navbar{
     margin-top: 0%;
     padding-top: 0%;
@@ -32,6 +31,9 @@
 .navbar-nav{
     margin-left: 5%;
     margin-right: 5%;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .principal {
@@ -50,6 +52,7 @@
     padding-bottom: 2%;
     height: 40vh;
     width: auto;
+    display: flex;
     
 }
 
@@ -67,7 +70,8 @@
     width: 100%;              
     margin: 0 auto;           
     column-count: 4;          
-    column-gap: 10%;        
+    column-gap: 10%;       
+    display: flex; 
 }
 
 
@@ -148,11 +152,6 @@
   
 }
 
-.autor{
-  width:80%;
-  line-height: 0.99;
-
-}
 .autor p{
   margin: 0;
   margin-top: 7%;
@@ -162,4 +161,52 @@
 
 .formulario{
   margin-top: 15%;
+}
+
+.autor{
+  margin-left: 40%;
+}
+
+.table-responsive p{
+  margin-right: 100%;
+}
+
+.table-responsive {
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .table-responsive-mobile {
+    overflow-x: auto; /* Habilita o scroll horizontal */
+    -webkit-overflow-scrolling: touch; /* Suave no mobile */
+  }
+  
+  /* Garantir que o texto dentro das células da tabela quebre adequadamente */
+  .table-responsive-mobile table {
+    width: 100%; /* Garantir que a tabela ocupe toda a largura disponível */
+    table-layout: fixed; /* Melhor controle sobre o layout das colunas */
+  }
+
+  /* Quebrar texto longo dentro das células */
+  .table-responsive-mobile td, 
+  .table-responsive-mobile th {
+    word-wrap: break-word;
+    word-break: break-word; /* Quebra palavras longas */
+    max-width: 100%; /* Evitar que o conteúdo ultrapasse as células */
+  }
+
+  /* Ajustar o tamanho da imagem do autor para dispositivos móveis */
+  .table-responsive-mobile .card img {
+    width: 40px; /* Limitar a largura da imagem */
+    height: 40px; /* Limitar a altura da imagem */
+    object-fit: cover; /* Ajuste adequado para a imagem */
+  }
+  
+  .autor{
+    width: 20vh;
+    padding: 0%;
+    margin-left: 20%;
+  }
+
 }
