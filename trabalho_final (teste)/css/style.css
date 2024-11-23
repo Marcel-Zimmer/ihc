@@ -160,7 +160,7 @@
 }
 
 .formulario{
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .autor{
@@ -209,4 +209,20 @@
     margin-left: 20%;
   }
 
+  .formulario h1{
+    margin-top: 30%;
+  }
+
+}
+
+#textoNovoPost{
+  margin-top: 5%;
+}
+
+.campo-invalido {
+  border: 2px solid red;
+}
+
+.campo-valido {
+  border: 2px solid green;
 }

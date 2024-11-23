@@ -75,86 +75,124 @@
         </div>
 
         <div class="central">  
-            <form class = "formulario">
-                <!-- Nome e sobrenome-->
-                <div class="row mb-4">
-                  <div class="col">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form6Example1" class="form-control" placeholder="Primeiro nome" />
+        
+        <form class="formulario">
+          <div id="textoNovoPost" class="text-center mb-4">
+            <h1>Novo Post</h1>
+        </div>
+            <!-- Nome e sobrenome -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-6">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example1" class="form-control" placeholder="Primeiro nome" />
                     </div>
-                  </div>
-                  <div class="col">
-                    <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form6Example1" class="form-control" placeholder="Sobrenome" />
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example2" class="form-control" placeholder="Sobrenome" />
                     </div>
-                  </div>
                 </div>
-                <div class="row mb-4">
-                    <div class="col">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form6Example1" class="form-control" placeholder="GRR : ex 10110000" />
-                      </div>
+            </div>
+        
+            <!-- GRR, Email, Nome do Curso e Turno -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-3">
+                    <div class="form-outline">
+                        <input type="number" id="form6Example3" class="form-control" placeholder="GRR : ex 10110000" />
                     </div>
-                    <div class="col">
-                      <div data-mdb-input-init class="form-outline">
-                          <input type="text" id="form6Example1" class="form-control" placeholder="Email institucional" />
-                      </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example4" class="form-control" placeholder="Email institucional" />
                     </div>
-                    <div class="col" >
-                        <div data-mdb-input-init class="form-outline">
-                            <input type="text" id="form6Example1" class="form-control" placeholder="Nome do Curso" />
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="form-check d-inline-block me-3 "style="margin-top: 3%;padding: 0%; margin-left:2%; ">
-                            <input class="form-check-input" type="radio" name="options" id="radio1">
-                            <label class="form-check-label" for="radio1">Turno Vespertino</label>
-                          </div>
-                          <div class="form-check d-inline-block me-3">
-                            <input class="form-check-input" type="radio" name="options" id="radio2">
-                            <label class="form-check-label" for="radio2">Turno Noturno</label>
-                          </div>
-                    
-                      </div>
-                  </div>
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form6Example4" class="form-control" />
-                  <label class="form-label" for="form6Example4">Address</label>
                 </div>
-              
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form6Example5" class="form-control" />
-                  <label class="form-label" for="form6Example5">Email</label>
+                <div class="col-12 col-md-3">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example5" class="form-control" placeholder="Nome do Curso" />
+                    </div>
                 </div>
-              
-                <!-- Number input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="number" id="form6Example6" class="form-control" />
-                  <label class="form-label" for="form6Example6">Phone</label>
+            </div>
+        
+            <!-- Turno -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="radio" name="turno" id="radio1" checked>
+                        <label class="form-check-label" for="radio1">Turno Vespertino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="turno" id="radio2">
+                        <label class="form-check-label" for="radio2">Turno Noturno</label>
+                    </div>
                 </div>
-              
-                <!-- Message input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-                  <label class="form-label" for="form6Example7">Additional information</label>
+            </div>
+        
+            <!-- Matéria, Código, Data e Hora -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-3">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example6" class="form-control" placeholder="Nome da matéria" />
+                    </div>
                 </div>
-              
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                  <input
-                    class="form-check-input me-2"
-                    type="checkbox"
-                    value=""
-                    id="form6Example8"
-                    checked
-                  />
-                  <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                <div class="col-12 col-md-3">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example7" class="form-control" placeholder="Código Matéria" />
+                    </div>
                 </div>
-              
-                <!-- Submit button -->
-                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Place order</button>
-              </form>
+                <div class="col-12 col-md-3">
+                    <div class="form-outline">
+                        <input type="date" id="form6Example8" class="form-control" placeholder="Data" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="form-outline">
+                        <input type="time" id="form6Example9" class="form-control" placeholder="Hora" />
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Categoria, Assunto -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-6">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example10" class="form-control" placeholder="Categoria do Post" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example11" class="form-control" placeholder="Assunto" />
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Validade e Data de Disponibilidade -->
+            <div class="row mb-4">
+                <div class="col-8">
+                    <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="radio" name="validade" id="radio3" checked>
+                        <label class="form-check-label" for="radio3">Post sem validade</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="validade" id="radio4">
+                        <label class="form-check-label" for="radio4">Post com validade</label>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="form-outline">
+                        <input type="date" id="form6Example12" class="form-control" placeholder="data" />
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Texto do Post -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="form6Example13" rows="8" placeholder="Texto do Post"></textarea>
+                <label class="form-label" for="form6Example13"></label>
+            </div>
+        
+            <!-- Botão de Submit -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Novo Post</button>
+        </form>
             
             <div class="rodape-ufpr">
                 <div id="rodape" class="row">
@@ -181,4 +219,5 @@
     </div>
 
 </body>
+<script src="./script/novoPost.js"></script>
 </html>
